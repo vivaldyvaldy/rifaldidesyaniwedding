@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+@font-face {
+  font-family: Proxima Nova Alt Rg;
+  src: url("../assets/ProximaNovaAltRg.otf");
+}
+html,
+body {
+  height: 100%;
+  background: #fff;
+}
+:root {
+  --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+  --mango-gradient: linear-gradient(to right, #ffa751, #ffe259);
+  --text-color: #f7f9f9;
+  --Montserrat: "Montserrat", cursive;
+  --Lobster: "Lobster", cursive;
+  --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+  --border-color: rgba(0, 0, 0, 0.329);
+}
+.container {
+  background: url("../custom/assets/memphis4.jpg") no-repeat;
+  background-size: 1050px 750px;
+  background-position: 235px -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98%;
+  max-height: 610px;
+}
+.container .panel {
+  width: 60%;
+  height: 100%;
+  box-shadow: var(--primary-gradient);
+}
+.row {
+  position: relative;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 65% auto;
+  height: 488px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 6px 12px 0 rgba(130, 130, 130, 0.39);
+}
+.liquid {
+  height: 488px;
+  width: 411px;
+  border-radius: 5px;
+  background: linear-gradient(130.56deg, #33ffce 0%, #4677cb 48%, #5856c6 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.owl-carousel {
+  width: 100%;
+  height: 320px;
+  max-height: 330px;
+}
+
+.owl-carousel .owl-item .login-img {
+  margin-top: 50px;
+  height: 250px;
+  width: 250px;
+  margin-left: 80px;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-slide {
+  padding: 50px;
+  margin-top: -45px;
+  height: 49px;
+  color: #fff;
+  font-family: "Proxima Nova Alt Rg";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+.text-btn {
+  height: 49px;
+  color: #fff;
+  font-family: "Proxima Nova Alt Rg";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  margin-top: -5px;
+}
+.forgot-password {
+  height: 18px;
+  color: #e15555;
+  font-family: "Proxima Nova Alt Rg";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 54px;
+}
+.text {
+  margin-left: 20px;
+  padding: 10px;
+  height: 68px;
+  text-align: left;
+  color: #5b5b5b;
+  font-family: "Proxima Nova Alt Rg";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.login {
+  margin-top: 35px;
+  margin-left: -135px;
+  height: 418px;
+  width: 411px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px 0 rgba(130, 130, 130, 0.39);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-input {
+  display: block;
+  padding: 20px;
+  margin: 34px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  height: 51px;
+  font-weight: 700;
+  font-size: 16px;
+  width: 343px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+.btn-signin {
+  cursor: pointer;
+  padding: 20px;
+  margin: 34px;
+  height: 51px;
+  width: 343px;
+  background: linear-gradient(99deg, #4933ff 0%, #2f77d6 41%, #44dba9 100%);
+  border: 1px solid #e1e1e1;
+}

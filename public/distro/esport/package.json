@@ -1,0 +1,27 @@
+{
+  "name": "tableexport-xls-bold-headers",
+  "version": "1.0.2",
+  "description": "A jQuery plugin which generates a basic .xls file with bold headers from a HTML table.",
+  "main": "tableexport-xls-bold-headers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlopantaleo/tableexport-xls-bold-headers.git"
+  },
+  "keywords": [
+    "tableexport",
+    "excel",
+    "xls",
+    "js",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Carlo Pantaleo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/carlopantaleo/tableexport-xls-bold-headers/issues"
+  },
+  "homepage": "https://github.com/carlopantaleo/tableexport-xls-bold-headers#readme"
+}
