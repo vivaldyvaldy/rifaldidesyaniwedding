@@ -8,7 +8,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">	
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
-		<link href="<?php $this->basePath();?> /distro/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+		<link href="public/distro/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="public/csswed/magnific-popup.css">
 		<link rel="stylesheet" href="public/csswed/owl.carousel.min.css">
 		<link rel="stylesheet" href="public/csswed/owl.theme.default.min.css">
@@ -454,7 +454,7 @@ html {
 #player-container #play-pause {
   cursor: pointer;
   position:fixed;
-  bottom:80px;
+  bottom:60px;
   text-indent: -999999px;
   height:40px;
   width: 40px;
@@ -570,6 +570,25 @@ html {
   height: auto;
 }
 
+.cardframe{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: all 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+}
+
+#fh5co-couple .desc-groom h3{
+	text-align: center;
+    font-weight: 600;
+    color: #888080;
+    font-size: 30px;	
+	line-height: 1.5;
+    font-family: "Sacramento", Arial, serif;	
+}
+
 	</style>
     <body>
         <!--div class="page_loader"></div-->
@@ -634,7 +653,21 @@ html {
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
-				<div class="couple-half">
+					<div class="col-md-6" style="text-align: -webkit-center;">
+						<img src="public/images/groom.jpg" alt="groom" class="img-responsive cardframe">
+						<div class="desc-groom">
+							<h3>Rifaldi Darussalam</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						</div>						
+					</div>	
+					<div class="col-md-6" style="text-align: -webkit-center;">
+						<img src="public/images/bride.jpg" alt="bride" class="img-responsive cardframe">
+						<div class="desc-groom">
+							<h3>Deysani Septria Nugraha</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						</div>						
+					</div>						
+				<!--div class="couple-half">
 					<div class="groom">
 						<img src="public/images/groom.jpg" alt="groom" class="img-responsive">
 					</div>
@@ -652,7 +685,7 @@ html {
 						<h3>Deysani Septria Nugraha</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
 					</div>
-				</div>
+				</div-->
 			</div>
 		</div>
 	</div>
@@ -1028,7 +1061,7 @@ html {
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div-->
 	<audio id="track">
-	  <source src="public/music/rf online - one.mp3" type="audio/mpeg" />
+	  <source src="public/music/K.WILL - Marry You.mp3" type="audio/mpeg" />
 	</audio>
 
 	<div id="player-container">
@@ -1099,7 +1132,7 @@ html {
 
 		function closeNav() {
 			document.getElementById("myNav").style.height = "0%";
-			$('.play').click();
+			<!-- $('.play').click(); -->
 		}
 
 		var track = document.getElementById('track');
