@@ -7,7 +7,8 @@
 		
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">	
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" type="text/css">
 		<link href="public/distro/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="public/csswed/magnific-popup.css">
 		<link rel="stylesheet" href="public/csswed/owl.carousel.min.css">
@@ -42,7 +43,8 @@
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background:#5ea763;
+	/* background:#5ea763; */
+	background: linear-gradient(86.75deg, #66B786 20.09%, #5BB37E 93.24%);  
 	margin: 18px 4px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -68,6 +70,7 @@
     margin: 0;
     padding: 0;
     color: #5ea763;
+	
 }	
 
 .fh5co-cover .display-t, .fh5co-cover .display-tc {
@@ -78,13 +81,14 @@
 		
 .navbar {
   overflow: hidden;
-  background-color: #5ea763;
+  /* background-color: #5ea763; */
   position: fixed;
   bottom: 0 !important;
   width: 100%;
   justify-content: center;
   text-align: center;
   margin-bottom: 0px !important;
+  background: linear-gradient(86.75deg, #66B786 20.09%, #5BB37E 93.24%);  
 }
 
 .navbar a {
@@ -92,18 +96,18 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 9px;
+  padding: 7px 9px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .navbar a:hover {
-  background: #f1f1f1;
+  background: #7dc79a;
   color: black;
 }
 
 .navbar a.active {
-  background-color: #04AA6D;
+  background-color: #7dc79a;
   color: white;
 }
 
@@ -311,11 +315,11 @@ html {
     padding-right: 50px;
 }
 
-#fh5co-event .btn {
+#fh5co-couple-story .btn {
     height: 54px;
     border: none !important;
-    background: #d6e9dd;
-    color: #000;
+    background: #60b582;
+    color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 400;
@@ -454,7 +458,7 @@ html {
 #player-container #play-pause {
   cursor: pointer;
   position:fixed;
-  bottom:60px;
+  bottom:95px;
   text-indent: -999999px;
   height:40px;
   width: 40px;
@@ -589,6 +593,137 @@ html {
     font-family: "Sacramento", Arial, serif;	
 }
 
+.plbtn {
+  overflow: hidden;
+  /* background-color: #5ea763; */
+  position: fixed;
+  bottom: 0 !important;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0px !important;
+  background: linear-gradient(86.75deg, #66B786 20.09%, #5BB37E 93.24%);  
+}
+
+#fh5co-counter .overlay, #fh5co-event .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 3%) !important;
+}
+
+@media only screen and (min-width: 250px) {
+  #fh5co-counter .feature-center .img-responsive { 
+     width: 40%; 
+  }
+}
+
+#fh5co-counter .event-wrap, #fh5co-couple-story .event-wrap {
+    border: 2px solid rgb(0 0 0 / 7%);
+    background: rgb(147 176 171 / 15%);
+    padding: 30px;
+    width: 100%;
+    float: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+#fh5co-counter .event-wrap h3, #fh5co-couple-story .event-wrap h3 {
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#fh5co-counter .event-wrap .event-col, #fh5co-couple-story .event-wrap .event-col {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+#fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span, #fh5co-couple-story .event-wrap p, #fh5co-couple-story .event-wrap span {
+    display: block;
+    color: rgb(0 0 0 / 80%);
+}
+
+#fh5co-started .form-inline .form-group .form-control {
+    width: 100%;
+}
+
+#fh5co-couple-story .form-control {
+    background: rgb(255 255 255 / 85%);
+    /* border: none !important; */
+    color: #000;
+    font-size: 16px !important;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-control:active, .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #c1c1c1;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: #eff3f2;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  bottom: 0 !important;  
+  margin-bottom: 0px !important;
+}
+
+.nav-btn {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-btn > i {
+  font-size: 1.25rem;
+}
+
+.nav-btn:hover {
+  background: #65b685;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-btn:focus, .nav-btn.active {
+  background: #65b685;
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 	</style>
     <body>
         <!--div class="page_loader"></div-->
@@ -643,7 +778,7 @@ html {
 	</header>
 	</section>
 	<section id="couple">
-	<div id="fh5co-couple" style="background-color: #f2f9f4;">
+	<div id="fh5co-couple" style="background-image:url(public/images/4907198.jpg);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -654,17 +789,17 @@ html {
 			</div>
 			<div class="couple-wrap animate-box">
 					<div class="col-md-6" style="text-align: -webkit-center;">
-						<img src="public/images/groom.jpg" alt="groom" class="img-responsive cardframe">
-						<div class="desc-groom">
-							<h3>Rifaldi Darussalam</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
-						</div>						
-					</div>	
-					<div class="col-md-6" style="text-align: -webkit-center;">
-						<img src="public/images/bride.jpg" alt="bride" class="img-responsive cardframe">
+						<img src="public/images/4R_qc_cr2.jpg" alt="bride" class="img-responsive cardframe">
 						<div class="desc-groom">
 							<h3>Deysani Septria Nugraha</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+							<p>Putra ke 1 dari Bpk Ohan Yuhana, S.Pd.SD & Ibu Yeni Susilawati, S.Pd</p>
+						</div>						
+					</div>				
+					<div class="col-md-6" style="text-align: -webkit-center;">
+						<img src="public/images/4R_qc_cr.jpg" alt="groom" class="img-responsive cardframe">
+						<div class="desc-groom">
+							<h3>Rifaldi Darussalam</h3>
+							<p>Putra ke 2 dari Bpk.H.Rachmat M.B,B.E,S.Pd. & Ibu Hj. Ena Rokhaenawati</p>
 						</div>						
 					</div>						
 				<!--div class="couple-half">
@@ -691,8 +826,8 @@ html {
 	</div>
 	</section>
 	<section id="event">
-	<div id="fh5co-event" class="fh5co-bg" style="background-color: #d6e9dd;">
-		<div class="overlay"></div>
+	<!-- <div id="fh5co-event" class="fh5co-bg" style="background-image:url(public/images/4907198.jpg);"> -->
+	<div id="fh5co-couple-story" style="background-image:url(public/images/4907198.jpg);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -706,34 +841,34 @@ html {
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Main Ceremony</h3>
+									<h3>Akad Nikah</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>4:00 PM</span>
-										<span>6:00 PM</span>
+										<span>09:00</span>
+										<span>10:00</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
+										<span>Minggu 13</span>
+										<span>Februari, 2022</span>
 									</div>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Rumah Mempelai wanita Kp. Sirnagalih Rt/Rw 01/01 Des. Citalem Kec. Cipongkor Kab. Bandung Barat.</p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Wedding Party</h3>
+									<h3>Resepsi Nikah</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
-										<span>12:00 AM</span>
+										<span>11:00</span>
+										<span>Selesai</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
+										<span>Minggu 13</span>
+										<span>Februari, 2022</span>
 									</div>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Rumah Mempelai wanita Kp. Sirnagalih Rt/Rw 01/01 Des. Citalem Kec. Cipongkor Kab. Bandung Barat.</p>
 								</div>
 							</div>	
 							<div class="col-md-12 text-center" style="margin-top: 20px;">
@@ -755,7 +890,7 @@ html {
 	</div>
 	</section>
 	<section id="couple">
-	<div id="fh5co-couple-story">
+	<div id="fh5co-couple-story" style="background-image:url(public/images/4907198.jpg);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -810,7 +945,7 @@ html {
 	</div>
 	</section>
 	<section id="galleryfoto">
-	<div id="fh5co-gallery" class="fh5co-section-gray">
+	<div id="fh5co-gallery" class="fh5co-section-gray" style="background-image:url(public/images/4907198.jpg);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -823,8 +958,8 @@ html {
                     <div class="col-sm-4 animate-box">
                         <div class="entry-thumb portfolio-thumb">
                             <div class="imgoverlay text-light">
-								<a href="images/gallery-1.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
-								  <img src="public/images/gallery-1.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
+								<a href="images/4R_qa.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+								  <img src="public/images/4R_qa.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
 								</a>
                             </div>							
                         </div>
@@ -832,8 +967,8 @@ html {
                     <div class="col-sm-4 animate-box">
                         <div class="entry-thumb portfolio-thumb">
                             <div class="imgoverlay text-light">
-								<a href="images/gallery-2.jpg" data-fancybox="gallery" data-caption="Caption Images 2">
-								  <img src="public/images/gallery-2.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
+								<a href="images/4R_qb.jpg" data-fancybox="gallery" data-caption="Caption Images 2">
+								  <img src="public/images/4R_qb.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
 								</a>
                             </div>								
                         </div>
@@ -841,70 +976,35 @@ html {
                     <div class="col-sm-4 animate-box">
                         <div class="entry-thumb portfolio-thumb">
                             <div class="imgoverlay text-light">
-								<a href="images/gallery-3.jpg" data-fancybox="gallery" data-caption="Caption Images 3">
-								  <img src="public/images/gallery-3.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
+								<a href="images/4R_qe.jpg" data-fancybox="gallery" data-caption="Caption Images 3">
+								  <img src="public/images/4R_qe.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
 								</a>
                             </div>							
                         </div>
                     </div><!--work col-->
+                    <div class="col-sm-4 animate-box">
+                        <div class="entry-thumb portfolio-thumb">
+                            <div class="imgoverlay text-light">
+								<a href="images/4R_qc.jpg" data-fancybox="gallery" data-caption="Caption Images 4">
+								  <img src="public/images/4R_qc.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
+								</a>
+                            </div>							
+                        </div>
+                    </div><!--work col-->	
+                    <div class="col-sm-4 animate-box">
+                        <div class="entry-thumb portfolio-thumb">
+                            <div class="imgoverlay text-light">
+								<a href="images/proses_4R_DSCF0601.jpg" data-fancybox="gallery" data-caption="Caption Images 5">
+								  <img src="public/images/proses_4R_DSCF0601.jpg" class="img-responsive" style="border-radius: 10px;margin-bottom: 15px;" alt="">
+								</a>
+                            </div>							
+                        </div>
+                    </div><!--work col-->				
                 </div><!--work row-->			
 		</div>
 	</div>
 	</section>	
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(public/images/img_bg_5.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-users"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Estimated Guest</span>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-user"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">We Catter</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Events Done</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-clock"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Hours Spent</span>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-testimonial">
+	<!--div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
 				<div class="row animate-box">
@@ -956,9 +1056,9 @@ html {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div-->
 	<section id="wishess">
-		<div id="fh5co-started" class="fh5co-bg" style="background-color: #d6e9dd;">
+		<div id="fh5co-couple-story" style="background-image:url(public/images/4907198.jpg);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row animate-box">
@@ -969,7 +1069,7 @@ html {
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline">
+						<form class="">
 						<div class="col-md-6">
 							<div class="form-group">
 								<label for="name" class="sr-only">Nama</label>
@@ -980,32 +1080,32 @@ html {
 								<textarea rows="7" cols="5"  id="ucapans" class="form-control" placeholder="Pesan"></textarea>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="text-semibold" style="color: white;font-size: 16px;">Konfirmasi Kehadiran</label>
-							</div>
-							<div class="form-group">
-								<label class="pure-material-radio">
-									<input type="radio" onchange="pilihtp(this.value)" name="group ckconfirm" value="1">
-									<span>Ya, Saya Akan hadir</span>
-								</label>
-								<br/>
-								<br/>
-								<label class="pure-material-radio">
-									<input type="radio" onchange="pilihtp(this.value)" name="group ckconfirm" value="2">
-									<span>Saya Masih Ragu</span>
-								</label>
-								<br/>
-								<br/>	
-								<label class="pure-material-radio">
-									<input type="radio" onchange="pilihtp(this.value)" name="group ckconfirm" value="3">
-									<span>Maaf, Saya Tidak Bisa Hadir</span>
-								</label>								
-							</div>
-							<input type="hidden" id="typex" class="form-control">							
-						</div>						
+						<!-- <div class="col-md-6"> -->
+							<!-- <div class="form-group"> -->
+								<!-- <label class="text-semibold" style="color: white;font-size: 16px;">Konfirmasi Kehadiran</label> -->
+							<!-- </div> -->
+							<!-- <div class="form-group"> -->
+								<!-- <label class="pure-material-radio"> -->
+									<!-- <input type="radio" onchange="pilihtp(this.value)" name="group ckconfirm" value="1"> -->
+									<!-- <span>Ya, Saya Akan hadir</span> -->
+								<!-- </label> -->
+								<!-- <br/> -->
+								<!-- <br/> -->
+								<!-- <label class="pure-material-radio"> -->
+									<!-- <input type="radio" onchange="pilihtp(this.value)" name="group ckconfirm" value="2"> -->
+									<!-- <span>Saya Masih Ragu</span> -->
+								<!-- </label> -->
+								<!-- <br/> -->
+								<!-- <br/>	 -->
+								<!-- <label class="pure-material-radio"> -->
+									<!-- <input type="radio" onchange="pilihtp(this.value)" name="group ckconfirm" value="3"> -->
+									<!-- <span>Maaf, Saya Tidak Bisa Hadir</span> -->
+								<!-- </label>								 -->
+							<!-- </div> -->
+							<!-- <input type="hidden" id="typex" class="form-control">							 -->
+						<!-- </div>						 -->
 						<div class="col-md-4 col-sm-4">
-							<span type="submit" id="sbchat" class="btn btn-default btn-block">Kirim</span>
+							<span type="submit" onClick="addmsg()" id="sbchat" class="btn btn-default btn-block">Kirim</span>
 						</div>
 						</form>
 					</div>
@@ -1026,7 +1126,45 @@ html {
 			</div>		
 		</div>
 	</section>	
-
+	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(public/images/4907198.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<center>
+								<img src="public/images/icon_nav/1.png" class="img-responsive" style="border-radius: 10px;" alt="">
+								</center>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<center>
+								<img src="public/images/icon_nav/2.png" class="img-responsive" style="border-radius: 10px;" alt="">
+								</center>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<center>
+								<img src="public/images/icon_nav/3.png" class="img-responsive" style="border-radius: 10px;" alt="">
+								</center>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<center>
+								<img src="public/images/icon_nav/4.png" class="img-responsive" style="border-radius: 10px;" alt="">
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -1050,13 +1188,45 @@ html {
 		</div>
 	</footer-->
 	</div>
-	<div class="navbar" id="navbbbr">
-	  <a href="#home">Home</a>
-	  <a href="#couple">Couple</a>
-	  <a href="#event">Event</a>
-	  <a href="#galleryfoto">Gallery</a>
-	  <a href="#wishess">Wishes</a>
-	</div>
+	<!-- <div class="navbar" id="navbbbr"> -->
+	  <!-- <a href="#home" align="center"><center><img src="public/images/icon_nav/icons8-home-100.png" class="img-responsive" align="center" style="width:35%;height:auto;" alt=""></center></a> -->
+	  <!-- <a href="#couple"><center><img src="public/images/icon_nav/icons8-gay-marriage-100.png" class="img-responsive" align="center" style="width:35%;height:auto;" alt=""></center></a> -->
+	  <!-- <a href="#event"><center><img src="public/images/icon_nav/icons8-planner-100.png" class="img-responsive" align="center" style="width:35%;height:auto;" alt=""></center></a> -->
+	  <!-- <a href="#galleryfoto"><center><img src="public/images/icon_nav/icons8-gallery-100.png" class="img-responsive" align="center" style="width:35%;height:auto;" alt=""></center></a> -->
+	  <!-- <a href="#wishess"><center><img src="public/images/icon_nav/icons8-holding-hand-100.png" class="img-responsive" align="center" style="width:35%;height:auto;" alt=""></center></a> -->
+	<!-- </div> -->
+	
+    <nav class="nav-menu">
+          <a class="nav-btn" href="#home" role="button" aria-label="home button">
+            <i class="fas fa-home"></i>
+          </a>
+                <a class="nav-btn" href="#couple" role="button" aria-label="search button">
+            <!-- <i class="fas fa-search"></i> -->
+			<!-- <i class="fas fa-user-friends"></i> -->
+			<i class="far fa-heart"></i>
+          </a>
+                <a class="nav-btn" href="#event" role="button" aria-label="favorites button">
+            <!-- <i class="fas fa-star"></i> -->
+			<i class="far fa-calendar-alt"></i>
+          </a>
+                      <a class="nav-btn" href="#galleryfoto" role="button" aria-label="uploads button">
+            <!-- <i class="fas fa-file-upload"></i> -->
+			<i class="fas fa-camera-retro"></i>
+          </a>
+                <a class="nav-btn" href="#wishess" role="button" aria-label="settings button">
+            <!-- <i class="fas fa-cog"></i> -->
+            <i class="fas fa-hand-holding-heart"></i>
+          </a>
+    </nav>		
+	
+	<!-- <div class="panel plbtn"> -->
+	<!-- <div class ="row"> -->
+        <!-- <div class="panel-body"> -->
+          <!-- <h4>Horizontal Card with Carousel - Bootstrap 4 </h4>		 -->
+		<!-- </div> -->
+	<!-- </div> -->
+	<!-- </div> -->
+	
 	<!--div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div-->
@@ -1166,36 +1336,32 @@ html {
 		 
 			var form = new FormData();
 			var settings = {
-			  "url": "https://army.khansia.co.id/scheduler/getct",
+			  "url": "http://temant.khansia.co.id/scheduler/getct",
 			  "method": "POST",
 			  "timeout": 0,
 			  "processData": false,
 			  "mimeType": "multipart/form-data",
 			  "contentType": false,
-			  "headers": {
-				  "accept": "application/json",
-				  "Access-Control-Allow-Origin":"*"
-			  },			  
 			  "data": form
 			};
 
 			$.ajax(settings).done(function (response) {
-			  <!-- console.log(response); -->
-				 if(result['response'] == 0){
-					 
-					 var dt		= result['data'];
+			  var dtParse 	= JSON.parse(response);
+			  var datas		= dtParse['data'];
+			  <!-- console.log(datas); -->
+				 if(dtParse['code'] == 0){
 					 var formct	= '';
-						for (var i = 0; i < dt.length; i++) {                                  
+						for (var i = 0; i < datas.length; i++) {                                  
 
 							formct	+='<div class="msg left-msg">'+
 										'<div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>'+
 											'<div class="msg-bubble">'+
 												'<div class="msg-info">'+
-													'<div class="msg-info-name">'+ dt[i].name +'</div>'+
-													'<div class="msg-info-time">' + dt[i].created_date + '</div>'+
+													'<div class="msg-info-name">'+ datas[i].name +'</div>'+
+													'<div class="msg-info-time">' + datas[i].created_date + '</div>'+
 												'</div>'+
 													'<div class="msg-text">'+
-													''+ dt[i].message +''+
+													''+ datas[i].message +''+
 													'</div>'+
 												'</div>'+
 											'</div>'+
@@ -1240,6 +1406,37 @@ html {
 			<!-- } -->
 		<!-- });		  -->
 		 
+		}
+		
+		function pilihtp(val){
+			$('#typex').val(val);
+		} 				
+				
+		function addmsg(){
+		
+			var name 	 	= $('#name').val();//nik pegawai
+			var ucapans 	= $('#ucapans').val();
+			var tipe 		= $('#typex').val();		
+		
+			var form = new FormData();
+			form.append("name", name);
+			form.append("ucapans", ucapans);
+			form.append("type", tipe);
+
+			var settings = {
+			  "url": "http://temant.khansia.co.id/scheduler/addmessage",
+			  "method": "POST",
+			  "timeout": 0,
+			  "processData": false,
+			  "mimeType": "multipart/form-data",
+			  "contentType": false,
+			  "data": form
+			};
+
+			$.ajax(settings).done(function (response) {
+				getchat();
+			  <!-- console.log(response); -->
+			});		
 		}
 		
 	 </script>
